@@ -20,8 +20,21 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       { path: "/", element: <Landing /> },
-      { path: "/cart", element: <Cart /> }
+      { path: "/about", element: <About /> },
+      { path: "/cart", element: <Cart /> },
+      { path: "/checkout", element: <Checkout /> },
+      { path: "/products", element: <Products /> },
+      { path: "/products/:productId", element: <SingleProduct /> },
+      { path: "/orders", element: <Orders /> }
     ]
+  },
+  {
+    path: "/login",
+    element: <Login />
+  },
+  {
+    path: "/register",
+    element: <Register />
   }
 ]);
 

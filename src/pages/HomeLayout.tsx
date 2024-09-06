@@ -7,12 +7,18 @@
  */
 
 import { Outlet } from "react-router-dom";
-
+import { Header, Navbar } from "../components";
 
 function HomeLayout() {
-  return <div>
-    <Outlet/>
-  </div>;
+  return (
+    <>
+      <Header />
+      <Navbar />
+      <div className="align-element py-24">
+        <Outlet />
+      </div>
+    </>
+  );
 }
 
 export default HomeLayout;
