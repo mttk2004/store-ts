@@ -13,9 +13,9 @@ function Logo() {
   return (
     <Link
       to="/"
-      className="hidden items-center justify-center rounded-lg bg-primary p-2 text-white md:flex"
+      className="hidden items-center justify-center rounded-lg bg-primary p-1 text-white md:flex"
     >
-      <Armchair className="h-7 w-7" />
+      <Armchair className="h-8 w-8" />
     </Link>
   );
 }

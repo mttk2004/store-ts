@@ -6,15 +6,36 @@
  *  "Family is where life begins and love never ends."
  */
 
-import {createSlice} from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { applyTheme } from "@/utils";
 
+export type Theme = "light" | "dark" | "system";
 
-const initialState = {}
+type ThemeState = {
+  theme: Theme;
+};
+
+const initializeTheme = (): Theme => {
+  const savedTheme = (localStorage.getItem("theme") as Theme) || "system";
+  applyTheme(savedTheme);
+  return savedTheme;
+};
+
+const initialState: ThemeState = {
+  theme: initializeTheme(),
+};
 
 const themeSlice = createSlice({
-  name: 'theme',
+  name: "theme",
   initialState,
-  reducers: {}
-})
+  reducers: {
+    setTheme(state, action: PayloadAction<Theme>): void {
+      state.theme = action.payload;
+      applyTheme(action.payload);
+      localStorage.setItem("theme", action.payload);
+    },
+  },
+});
 
-export default themeSlice.reducer
+export const { setTheme } = themeSlice.actions;
+export default themeSlice.reducer;
