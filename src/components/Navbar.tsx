@@ -15,7 +15,7 @@ import {
 
 function Navbar() {
   return (
-    <nav className="align-element flex items-center justify-between bg-muted py-3">
+    <nav className="align-element flex items-center justify-between bg-primary-foreground py-3">
       <Logo />
       <LinksDropdown />
       <NavLinks />

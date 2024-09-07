@@ -29,7 +29,7 @@ function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" sideOffset={10}>
         <DropdownMenuItem onClick={() => dispatch(setTheme("light"))}>
           Light
         </DropdownMenuItem>

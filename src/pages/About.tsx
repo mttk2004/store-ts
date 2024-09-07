@@ -6,9 +6,36 @@
  *  "Family is where life begins and love never ends."
  */
 
-
 function About() {
-  return <div></div>;
+  return (
+    <div className="space-y-6 text-center sm:space-y-8 md:space-y-10 lg:space-y-14">
+      <h1 className="text-3xl font-bold uppercase leading-5 tracking-wide md:text-4xl md:tracking-widest lg:text-5xl">
+        We Love{" "}
+        <span className="rounded-2xl bg-primary px-2 py-1 text-2xl text-primary-foreground md:text-3xl lg:text-4xl">
+          Store-TS
+        </span>
+      </h1>
+      <p className="mx-auto max-w-xl text-pretty text-left md:max-w-2xl">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur
+        culpa delectus deserunt et excepturi explicabo illo ipsam, ipsum iusto
+        officiis placeat possimus praesentium quia quibusdam quis ratione
+        recusandae rerum similique sint, tempore unde velit vero? Eligendi et
+        fuga illum incidunt magni nam, obcaecati praesentium similique tempore
+        ullam voluptate voluptatibus voluptatum? A accusamus aliquid beatae
+        dicta illum iste iure nam sapiente voluptatem voluptatibus. Accusantium
+        animi assumenda earum laborum magnam nihil rem tempora ullam vero
+        voluptatum. Ab accusantium adipisci assumenda consectetur dolorum facere
+        facilis fuga illum libero nisi rem, veritatis! Commodi deserunt dolores
+        fugit, hic illo iure, labore maxime minus nihil nulla numquam porro
+        quaerat, repudiandae suscipit tempore unde velit veniam voluptas? A,
+        aliquam autem corporis in itaque labore minima molestiae mollitia natus
+        nemo optio pariatur qui reprehenderit sequi soluta? Cupiditate dolorem
+        incidunt labore maxime quas, recusandae sit vitae. A adipisci aspernatur
+        beatae esse incidunt necessitatibus porro quisquam sit soluta
+        temporibus.
+      </p>
+    </div>
+  );
 }
 
 export default About;

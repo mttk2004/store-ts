@@ -7,15 +7,11 @@
  */
 
 import { Link } from "react-router-dom";
-import { Armchair } from "lucide-react";
 
 function Logo() {
   return (
-    <Link
-      to="/"
-      className="hidden items-center justify-center rounded-lg bg-primary p-1 text-white md:flex"
-    >
-      <Armchair className="h-8 w-8" />
+    <Link to="/" className="hidden justify-items-center md:flex">
+      <img src="../../public/bird.svg" alt="Logo" className="h-7 w-7" />
     </Link>
   );
 }

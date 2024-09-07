@@ -1,20 +1,19 @@
 /**
  *  Project: store-ts
- *  File: Error.tsx
- *  Created: 12:17 CH, 06/09/2024
+ *  File: ErrorElement.tsx
+ *  Created: 9:29 SA, 07/09/2024
  *  Author: Mai Tran Tuan Kiet
  *  "Family is where life begins and love never ends."
  */
-
-import { Link, useRouteError } from "react-router-dom";
 import { Button } from "@/components/ui/button.tsx";
+import { Link, useRouteError } from "react-router-dom";
 
-function Error() {
-  const error: unknown = useRouteError();
+function ErrorElement() {
+  const error = useRouteError();
   console.log(error);
 
   return (
-    <main className="relative min-h-screen text-center">
+    <div className="relative min-h-screen text-center">
       <div className="absolute left-1/2 top-1/4 inline-block -translate-x-1/2 -translate-y-1/4 transform space-y-4">
         <h1 className="text-3xl font-bold uppercase tracking-widest">
           error🥲
@@ -31,8 +30,8 @@ function Error() {
           <Link to="/">Go back home</Link>
         </Button>
       </div>
-    </main>
+    </div>
   );
 }
 
-export default Error;
+export default ErrorElement;

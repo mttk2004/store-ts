@@ -6,17 +6,23 @@
  *  "Family is where life begins and love never ends."
  */
 
-import { Outlet } from "react-router-dom";
-import { Header, Navbar } from "../components";
+import { Outlet, useNavigation } from "react-router-dom";
+import { Header, Navbar, Footer } from "../components";
+import { Loader } from "@/components";
 
 function HomeLayout() {
+  const { state } = useNavigation();
+  const isLoading = state === "loading";
+
   return (
     <>
+      {isLoading && <Loader />}
       <Header />
       <Navbar />
-      <div className="align-element py-24">
+      <main className="align-element py-8 sm:py-10 md:py-12 lg:py-16">
         <Outlet />
-      </div>
+      </main>
+      <Footer />
     </>
   );
 }

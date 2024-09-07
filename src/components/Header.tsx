@@ -19,11 +19,11 @@ function Header() {
   }
 
   return (
-    <header>
+    <header className="bg-tertiary">
       <div className="align-element flex items-center justify-center sm:justify-end">
         {user ? (
           <div className="flex items-center justify-between gap-x-2 text-xs sm:gap-x-4 sm:text-sm">
-            <p className="inline-block">Hello, {user.username}</p>
+            <p className="inline-block">Hello, {user.username}!</p>
             <Button
               variant="link"
               size="sm"
