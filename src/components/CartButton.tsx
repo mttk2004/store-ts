@@ -17,7 +17,7 @@ function CartButton() {
     <Button asChild variant="outline" size="icon" className="rounded-xl">
       <Link to="/cart" className="relative flex items-center justify-center">
         <ShoppingCart />
-        <span className="absolute right-0 top-0 inline-flex -translate-y-1/2 translate-x-1/2 transform items-center justify-center rounded-full bg-primary px-2 py-1 text-xs font-bold leading-none text-white">
+        <span className="absolute right-0 top-0 inline-flex -translate-y-1/2 translate-x-1/2 transform items-center justify-center rounded-full bg-primary px-1 py-0.5 text-2xs font-bold leading-none text-white sm:px-2 sm:py-1 sm:text-xs">
           {numCartItems}
         </span>
       </Link>

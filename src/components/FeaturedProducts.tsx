@@ -6,8 +6,15 @@
  *  "Family is where life begins and love never ends."
  */
 
+import { ProductsGrid, SectionTitle } from "@/components/index.ts";
+
 function FeaturedProducts() {
-  return <div>Hgd</div>;
+  return (
+    <div className="space-y-6">
+      <SectionTitle text="Featured Products" />
+      <ProductsGrid />
+    </div>
+  );
 }
 
 export default FeaturedProducts;

@@ -27,11 +27,7 @@ function LinksDropdown() {
         </Button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent
-        align="start"
-        sideOffset={10}
-        className="w-48 md:hidden"
-      >
+      <DropdownMenuContent align="start" sideOffset={10} className="md:hidden">
         {links.map((link) => (
           <DropdownMenuItem key={link.label}>
             <NavLink

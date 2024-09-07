@@ -15,11 +15,11 @@ import {
 
 function Navbar() {
   return (
-    <nav className="align-element flex items-center justify-between bg-primary-foreground py-3">
+    <nav className="align-element flex items-center justify-between bg-primary-foreground py-1.5 sm:py-2 md:py-2.5">
       <Logo />
       <LinksDropdown />
       <NavLinks />
-      <span className="inline-flex items-center justify-center gap-x-4">
+      <span className="inline-flex items-center justify-center gap-x-1 sm:gap-x-2">
         <ModeToggle />
         <CartButton />
       </span>

@@ -20,3 +20,7 @@ export { default as SectionTitle } from "../components/SectionTitle.tsx";
 export { default as ProductsGrid } from "../components/ProductsGrid.tsx";
 export { default as Footer } from "../components/Footer.tsx";
 export { default as Loader } from "../components/Loader.tsx";
+export { default as Filters } from "../components/Filters.tsx";
+export { default as ProductsContainer } from "../components/ProductsContainer.tsx";
+export { default as PaginationContainer } from "../components/PaginationContainer.tsx";
+export { default as ProductsList } from "../components/ProductsList.tsx";

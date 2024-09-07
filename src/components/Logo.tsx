@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 function Logo() {
   return (
     <Link to="/" className="hidden justify-items-center md:flex">
-      <img src="../../public/bird.svg" alt="Logo" className="h-7 w-7" />
+      <img src="bird.svg" alt="Logo" className="h-7 w-7" />
     </Link>
   );
 }
