@@ -12,6 +12,7 @@ import {
   ModeToggle,
   NavLinks,
 } from "@/components/index.ts";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -19,6 +20,14 @@ function Navbar() {
       <Logo />
       <LinksDropdown />
       <NavLinks />
+
+      <Link to="/" className="flex justify-items-center gap-x-1 md:hidden">
+        <img src="bird.svg" alt="Logo" className="h-7 w-7" />
+        <span className="inline-flex justify-items-center font-bold uppercase leading-8 text-primary">
+          Store TS
+        </span>
+      </Link>
+
       <span className="inline-flex items-center justify-center gap-x-1 sm:gap-x-2">
         <ModeToggle />
         <CartButton />

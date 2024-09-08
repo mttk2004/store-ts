@@ -24,3 +24,4 @@ export { default as Filters } from "../components/Filters.tsx";
 export { default as ProductsContainer } from "../components/ProductsContainer.tsx";
 export { default as PaginationContainer } from "../components/PaginationContainer.tsx";
 export { default as ProductsList } from "../components/ProductsList.tsx";
+export { default as FormInput } from "../components/FormInput.tsx";

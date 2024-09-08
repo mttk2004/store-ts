@@ -8,7 +8,7 @@
 
 function About() {
   return (
-    <div className="space-y-6 text-center sm:space-y-8 md:space-y-10 lg:space-y-14">
+    <div className="space-y-6 py-8 text-center sm:space-y-8 sm:py-10 md:space-y-10 md:py-12 lg:space-y-14 lg:py-16">
       <h1 className="text-3xl font-bold uppercase leading-5 tracking-wide md:text-4xl md:tracking-widest lg:text-5xl">
         We Love{" "}
         <span className="inline-block -translate-y-0.5 transform rounded-2xl bg-primary px-2 py-1 text-2xl text-primary-foreground md:-translate-y-[0.175rem] md:text-3xl lg:text-4xl">

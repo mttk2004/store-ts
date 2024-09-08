@@ -21,7 +21,11 @@ function LinksDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild className="md:hidden">
-        <Button variant="outline" size="icon" className="rounded-xl">
+        <Button
+          variant="outline"
+          size="icon"
+          className="h-9 w-9 rounded-xl p-2"
+        >
           <AlignLeft />
           <span className="sr-only"> Toggle Links</span>
         </Button>

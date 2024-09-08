@@ -19,7 +19,7 @@ function HomeLayout() {
       {isLoading && <Loader />}
       <Header />
       <Navbar />
-      <main className="align-element py-8 sm:py-10 md:py-12 lg:py-16">
+      <main className="align-element">
         <Outlet />
       </main>
       <Footer />

@@ -7,17 +7,28 @@
  */
 
 import { customFetch, ProductsResponse } from "@/utils";
-import { useLoaderData } from "react-router-dom";
+import { Filters, PaginationContainer, ProductsContainer } from "@/components";
 
 function Products() {
-  const data = useLoaderData();
-  console.log(data);
-
-  return <div></div>;
+  return (
+    <div className="space-y-4 py-2 sm:py-4 md:py-6 lg:py-8">
+      <Filters />
+      <ProductsContainer />
+      <PaginationContainer />
+    </div>
+  );
 }
 
-export const loader = async function (): Promise<ProductsResponse> {
-  const response = await customFetch<ProductsResponse>("/products");
+export const loader = async function ({
+  request,
+}: {
+  request: Request;
+}): Promise<ProductsResponse> {
+  const params = Object.fromEntries([
+    ...new URL(request.url).searchParams.entries(),
+  ]);
+
+  const response = await customFetch<ProductsResponse>("/products", { params });
 
   return { ...response.data };
 };

@@ -15,10 +15,10 @@ function Landing() {
   console.log(data);
 
   return (
-    <>
+    <div className="py-8 sm:py-10 md:py-12 lg:py-16">
       <Hero />
       <FeaturedProducts />
-    </>
+    </div>
   );
 }
 
