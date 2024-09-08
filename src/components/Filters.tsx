@@ -6,13 +6,13 @@
  *  "Family is where life begins and love never ends."
  */
 
-import { Form, Link, useLoaderData } from "react-router-dom";
+import { Form, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button.tsx";
-import { ProductsResponseWithParams } from "@/utils";
+// import { ProductsResponseWithParams } from "@/utils";
 import { FormInput } from "@/components/index.ts";
 
 function Filters() {
-  const { meta, params } = useLoaderData() as ProductsResponseWithParams;
+  // const { meta, params } = useLoaderData() as ProductsResponseWithParams;
   // const { search, company, category, price, shipping, order } = params;
 
   return (
